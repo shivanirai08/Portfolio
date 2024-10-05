@@ -60,7 +60,7 @@ nav a:hover{
     gap: 2vw;
     text-align: center;
     padding: 0 4vw;
-    background-color: aquamarine;
+    /* background-color: aquamarine; */
 }
 #home-screen h1{
     font-size: 4.6vw;
@@ -92,6 +92,8 @@ button a{
 }
 .buttons button:hover{
     background-color: #6b863c;
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 /* About Section */
 #about{
@@ -99,7 +101,7 @@ button a{
     height: 60vh;
     display: flex;
     padding: 0 4vw;
-    background-color: wheat;
+    /* background-color: wheat; */
 }
 /* photo-section */
 #photo-section{
@@ -190,36 +192,69 @@ button a{
 }
 .project {
     height: 80vh;
-    width: 50vh;
-    border: 2px solid #ccc;
+    width: 60vh;
+    border: 2px solid #7F8C3A;
     border-radius: 8px;
-    box-shadow: 0 9px 9px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 9px 9px rgba(0, 0, 0, 0.1); */
+    box-shadow: 0 9px 9px rgba(85, 107, 47, 0.5);
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1vw;
+    transition: all 0.5s ease;
+    overflow: hidden;
+    position: relative;
+    background-color: #f0f2f5;
 }
-.project >img {
+.project::before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: 0;
     width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #556B2F, #607935);
+    transition: top 0.5s ease-in-out;
+    z-index: 0;
+}
+.project:hover::before {
+    top: 0; 
+}
+.project:nth-child(1) > .img {
+    width: calc(100% - 2vw);
     height: 40%;
-    object-fit: cover;
-    border-radius: 8px 8px 0px 0px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-    object-position: top;
+    margin: 1vw;
+    border-radius: 10px;
+    background: url(groceyish.png);
+    background-size: cover;
+    background-position: top;
+    z-index: 1;
+}
+.project:nth-child(2) > .img {
+    width: calc(100% - 2vw);
+    height: 40%;
+    margin: 1vw;
+    border-radius: 10px;
+    background: url(netflixclone.png);
+    background-size: cover;
+    background-position: top;
+    z-index: 1;
 }
 
 .project > h3 {
-    font-size: 1.8vw;
+    font-size: 2vw;
     color: #556B2F;
-    font-weight: 500;
+    font-weight: 700;
+    z-index: 1;
 }
 
 .project > p{
     padding: 1vw;
     font-size: 1.4vw;
     color: #607935;
-    font-weight: 400;
+    font-weight: 500;
     text-align: justify;
+    z-index: 1;
 }
 .project_btn {
     padding: 1vw 2vw;
@@ -229,7 +264,19 @@ button a{
     display: inline-block;
     border-radius: 5px;
     font-size: 1.4vw;
+    cursor: pointer;
+    z-index: 1;
 }
 .project_btn:hover{
     background-color: #6b863c;
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+.project:hover > h3,
+.project:hover > p{
+    color: #f0f2f5; 
+}
+.project:hover > .project_btn {
+    background-color: #f0f2f5;
+    color: #556B2F;
 }
