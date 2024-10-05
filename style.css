@@ -9,7 +9,6 @@
 html , body {
     font-family: "Glory", sans-serif;
     background-color: #f0f2f5;
-    /* color: #333333; */
     height: 100%;
     width: 100%;
 }
@@ -17,6 +16,7 @@ html , body {
 main{
     height: 100%;
     width: 100%;
+    position: relative;
 }
 
 /* navigation bar */
@@ -29,6 +29,9 @@ main{
     padding: 0 4vw;
     box-shadow: 1px 1px 2px #a7a6a6;
     background-color: #556B2F;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 nav ul{
     display: flex;
@@ -52,7 +55,7 @@ nav a:hover{
 /* Home Screen */
 #home-screen{
     width: 100%;
-    height: 80vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -60,7 +63,6 @@ nav a:hover{
     gap: 2vw;
     text-align: center;
     padding: 0 4vw;
-    /* background-color: aquamarine; */
 }
 #home-screen h1{
     font-size: 4.6vw;
@@ -71,6 +73,7 @@ nav a:hover{
 #home-screen h2{
     font-size: 2.6vw;
     line-height: 1;
+    font-weight: 500;
     color: #607935 ;
 }
 .buttons{
@@ -80,7 +83,8 @@ nav a:hover{
 .buttons button{
     padding: 1vw 2vw;
     border-radius: 5px;
-    font-size: 1.2vw;
+    font-size: 1.4vw;
+    font-weight: 500;
     cursor: pointer;
     background-color: #607935;
     color: #f8f8f8;
@@ -101,7 +105,6 @@ button a{
     height: 60vh;
     display: flex;
     padding: 0 4vw;
-    /* background-color: wheat; */
 }
 /* photo-section */
 #photo-section{
@@ -165,13 +168,13 @@ button a{
 /* Project Section */
 #projects{
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     padding: 0 4vw;
-    /* background-color: cornflowerblue; */
+    gap: 2vw;
 }
 
 #projects h1{
@@ -182,7 +185,7 @@ button a{
     text-align: center;
 }
 .project-container {
-    height: 100%;
+    /* height: 100%; */
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -195,7 +198,6 @@ button a{
     width: 60vh;
     border: 2px solid #7F8C3A;
     border-radius: 8px;
-    /* box-shadow: 0 9px 9px rgba(0, 0, 0, 0.1); */
     box-shadow: 0 9px 9px rgba(85, 107, 47, 0.5);
     display: flex;
     flex-direction: column;
@@ -280,3 +282,146 @@ button a{
     background-color: #f0f2f5;
     color: #556B2F;
 }
+
+/* Skills */
+#skills{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 4vw;
+    gap: 2vw;
+}
+
+#skills h1{
+    font-size: 3.2vw;
+    line-height: 1.2;
+    color: #556B2F;
+    font-weight: 900;
+    text-align: center;
+}
+.scroll{
+    overflow-x: hidden;
+    /* animation: scrollan 10s linear infinite; */
+}
+.icon{
+    display: flex;
+    width: max-content;
+    gap: 3vw;
+}
+.data{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    flex-direction: column;
+}
+.data > svg{
+    width: 4vw;
+    height: 4vw;
+}
+/* Contact Me */
+#contact{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    gap: 1vw;
+    padding: 0 4vw;
+}
+
+#contact h1{
+    font-size: 3.2vw;
+    line-height: 1.2;
+    color: #556B2F;
+    font-weight: 900;
+    text-align: center;
+}
+#contact h2{
+    font-size: 1.6vw;
+    color: #607935;
+    font-weight: 500;
+    text-align: center;
+}
+form {
+    width: 30vw;
+    margin: 20px auto;
+    padding: 2vw;
+    /* background-color: #333; */
+    border:2px solid #556B2F;
+    border-radius: 10px;
+    box-shadow: 0 5px 9px rgba(0, 0, 0, 0.3);
+    text-align: left;
+}
+form label{
+    font-size: 1.25vw;
+    line-height: 1.2;
+    color: #556B2F;
+    font-weight: 600;
+}
+form input[type="text"],
+form input[type="email"],
+form textarea{
+    /* width: calc(100%); */
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 0px;
+    border: 1px solid #7F8C3A;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+    outline-color: #556B2F;
+}
+form button{
+    width: 100%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background: linear-gradient(to right bottom, #7F8C3A , #556B2F);
+    cursor: pointer;
+    font-size: 18px;
+}
+
+form button:hover{
+    background: linear-gradient(to left bottom, #7F8C3A , #556B2F);
+    transform: scale(0.95); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
+}
+
+#social-media{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+}
+#social-media i{
+    font-size: 2.5vw;
+    color: #607935;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+#contact h3{
+    font-size: 1.4vw;
+    color: #556B2F;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Footer */
+
+footer{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #556B2F;
+    color: #f0f2f5;
+    gap: 2vw;
+}
+footer p{
+    font-size: 1.2vw;
+    line-height: 1.5;
+}
+
