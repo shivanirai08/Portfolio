@@ -9,8 +9,6 @@
 html , body {
     font-family: "Glory", sans-serif;
     background-color: #f0f2f5;
-    height: 100%;
-    width: 100%;
 }
 
 main{
@@ -39,6 +37,9 @@ nav ul{
     align-items: center;
     list-style: none;
     gap: 4vw;
+}
+nav i{
+    opacity: 0;
 }
 nav a{
     color: #F7F1E3;
@@ -425,3 +426,386 @@ footer p{
     line-height: 1.5;
 }
 
+
+/* Media Queries */
+
+@media screen and (max-width: 992px){
+    body{
+        font-size: 14px;
+    }
+    nav ul{
+        font-size: 16px;
+        opacity: 0;
+    }
+    nav i{
+        font-size: 3vw;
+        opacity: 1;
+        color: #f0f2f5;
+    }
+    #home-screen{
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2.4vw;
+        padding: 0 2vw;
+    }
+    #home-screen h1{
+        font-size: 5vw;
+    }
+    #home-screen h2{
+        font-size: 2.4vw;
+    }
+    .buttons{
+        gap: 3vw;
+    }
+    .buttons button a{
+        font-size: 2.2vw;
+    }
+    #about{
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3vw;
+        padding: 0 2vw;
+    }
+    #photo{
+        height: 20vw;
+        width: 20vw;
+    }
+    #about-section h1{
+        font-size: 3.8vw;
+        text-align: center;
+    }
+    #about-section h3{
+        font-size: 2.4vw;
+        font-weight: 600;
+    }
+    #skills{
+        height: 30vh;
+    }
+    #skills h1{
+        font-size: 3.8vw;
+    }
+    #projects{
+        height: 80vh;
+        padding: 0 2vw;
+        gap: 3vw;
+    }
+    #projects h1{
+        font-size: 4vw;
+    }
+    .project{
+        height: 60vh;
+        
+    }
+    .project> h3{
+        font-size: 3.2vw;
+    }
+    .project> p{
+        font-size: 2.4vw;
+    }
+    .project > .project_btn{
+        font-size: 2.2vw;
+    }
+    #contact{
+        height: 80vh;
+        padding: 0 2vw;
+        gap: 3vw;
+
+    }
+    #contact h1{
+        font-size: 4vw;
+    }
+    #contact h2{
+        font-size: 2.8vw;
+    }
+    form{
+        width: 60vw;
+        margin: 0 auto;
+        padding: 2vw;
+    }
+    form label{
+        font-size: 2.2vw;
+    }
+    #social-media{
+        gap: 3vw;
+    }
+    #social-media i{
+        font-size: 4vw;
+    }
+    #contact h3{
+        font-size: 2.6vw;
+    }
+    footer p{
+        font-size: 2.4vw;
+    }
+}
+
+@media screen and (max-width: 768px){
+    nav{
+        height: 6vh;
+    }
+        nav i{
+        font-size: 6vw;
+        opacity: 1;
+        color: #f0f2f5;
+    }
+    #home-screen{
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2.4vw;
+        padding: 0 2vw;
+    }
+    #home-screen h1{
+        font-size: 6.8vw;
+        font-weight: 900;
+    }
+    #home-screen h2{
+        font-size: 3.8vw;
+        font-weight: 600;
+    }
+    .buttons{
+        gap: 3vw;
+    }
+    .buttons button{
+        padding: 2vw 4vw;
+    } 
+    .buttons button a{
+        font-size: 3vw;
+    }
+    #about{
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3vw;
+        padding: 0 2vw;
+    }
+    #photo{
+        height: 24vw;
+        width: 24vw;
+    }
+    #about-section h1{
+        font-size: 6vw;
+        text-align: center;
+    }
+    #about-section h3{
+        font-size: 3.8vw;
+        font-weight: 600;
+    }
+    #skills{
+        height: 28vh;
+    }
+    #skills h1{
+        font-size: 6vw;
+    }
+    .icon{
+        gap: 6vw;
+    }
+    .data svg{
+        height: 8vw;
+        width: 8vw;
+    }
+    #projects{
+        height: 120vh;
+        padding: 0 2vw;
+        gap: 3vw;
+    }
+    #projects h1{
+        font-size: 6vw;
+    }
+    .project-container{
+        flex-direction: column;
+        gap: 3vw;
+
+    }
+    .project{
+        height: 50vh;
+        width: 80%;
+    }
+    .project> h3{
+        font-size: 5.6vw;
+    }
+    .project> p{
+        font-size: 4vw;
+    }
+    .project > .project_btn{
+        font-size: 3.2vw;
+        padding: 2vw 4vw;
+    }
+    #contact{
+        height: 80vh;
+        padding: 0 2vw;
+        gap: 3vw;
+
+    }
+    #contact h1{
+        font-size: 6vw;
+    }
+    #contact h2{
+        font-size: 4.2vw;
+    }
+    form{
+        width: 70vw;
+        margin: 0 auto;
+        padding: 2vw;
+    }
+    form label{
+        font-size: 4.2vw;
+    }
+    #social-media{
+        gap: 4vw;
+    }
+    #social-media i{
+        font-size: 6vw;
+    }
+    #contact h3{
+        font-size: 4vw;
+    }
+    footer{
+        height: 8vh;
+    }
+    footer p{
+        font-size: 3.8vw;
+    }
+}
+@media screen and (max-width: 768px){
+    nav{
+        height: 6vh;
+    }
+        nav i{
+        font-size: 6vw;
+        opacity: 1;
+        color: #f0f2f5;
+    }
+    #home-screen{
+        height: 40vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2.4vw;
+        padding: 0 2vw;
+    }
+    #home-screen h1{
+        font-size: 6.8vw;
+        font-weight: 900;
+    }
+    #home-screen h2{
+        font-size: 3.8vw;
+        font-weight: 600;
+    }
+    .buttons{
+        gap: 3vw;
+    }
+    .buttons button{
+        padding: 2vw 4vw;
+    } 
+    .buttons button a{
+        font-size: 3vw;
+    }
+    #about{
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3vw;
+        padding: 0 2vw;
+    }
+    #photo{
+        height: 24vw;
+        width: 24vw;
+    }
+    #about-section h1{
+        font-size: 6vw;
+        text-align: center;
+    }
+    #about-section h3{
+        font-size: 3.8vw;
+        font-weight: 600;
+    }
+    #skills{
+        height: 28vh;
+    }
+    #skills h1{
+        font-size: 6vw;
+    }
+    .icon{
+        gap: 6vw;
+    }
+    .data svg{
+        height: 8vw;
+        width: 8vw;
+    }
+    #projects{
+        height: 120vh;
+        padding: 0 2vw;
+        gap: 3vw;
+    }
+    #projects h1{
+        font-size: 6vw;
+    }
+    .project-container{
+        flex-direction: column;
+        gap: 3vw;
+
+    }
+    .project{
+        height: 50vh;
+        width: 80%;
+    }
+    .project> h3{
+        font-size: 5.6vw;
+    }
+    .project> p{
+        font-size: 4vw;
+    }
+    .project > .project_btn{
+        font-size: 3.2vw;
+        padding: 2vw 4vw;
+    }
+    #contact{
+        height: 80vh;
+        padding: 0 2vw;
+        gap: 3vw;
+
+    }
+    #contact h1{
+        font-size: 6vw;
+    }
+    #contact h2{
+        font-size: 4.2vw;
+    }
+    form{
+        width: 70vw;
+        margin: 0 auto;
+        padding: 2vw;
+    }
+    form label{
+        font-size: 4.2vw;
+    }
+    #social-media{
+        gap: 4vw;
+    }
+    #social-media i{
+        font-size: 6vw;
+    }
+    #contact h3{
+        font-size: 4vw;
+    }
+    footer{
+        height: 8vh;
+    }
+    footer p{
+        font-size: 3.8vw;
+    }
+}
