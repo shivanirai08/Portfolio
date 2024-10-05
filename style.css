@@ -38,12 +38,18 @@ nav ul{
     list-style: none;
     gap: 4vw;
 }
-.hamburger-toggle {
+.checkbtn {
+    font-size: 22px;
+    color: white;
+    /* float: right; */
+    line-height: 80px;
+    margin-right: 2vw;
+    cursor: pointer;
     display: none;
-}
-nav i{
-    opacity: 0;
-}
+  }
+  #check{
+    display: none;
+  }
 nav a{
     color: #F7F1E3;
     font-size: 1.4vw;
@@ -228,7 +234,7 @@ button a{
     top: 0; 
 }
 .project:nth-child(1) > .img {
-    width: calc(100% - 2vw);
+    width: 100%;
     height: 40%;
     /* margin: 1vw; */
     border-radius: 10px;
@@ -238,7 +244,7 @@ button a{
     z-index: 1;
 }
 .project:nth-child(2) > .img {
-    width: calc(100% - 2vw);
+    width: 100%;
     height: 40%;
     /* margin: 1vw; */
     border-radius: 10px;
@@ -435,17 +441,39 @@ footer p{
     body{
         font-size: 14px;
     }
+    .checkbtn{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 50vh;
+        background: #607935;
+        top: 8vh;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        flex-direction: column;
+        justify-content: center;
+        /* gap: 1em; */
+    }
+    nav ul li {
+        display: block;
+        padding: 1vw;
+        width: 50%;
+        border-bottom: 1px #f0f2f5 solid;
+        /* margin: 50px 0; */
+        /* line-height: ; */
+      }
     nav ul a{
         font-size: 2.4vw;
-        opacity: 0;
+        /* opacity: 0; */
     }
-    nav i{
-        font-size: 3vw;
-        opacity: 1;
-        color: #f0f2f5;
-    }
+    #check:checked~ul {
+        left: 0;
+      }
     #home-screen{
-        height: 50vh;
+        height: 60vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -466,7 +494,7 @@ footer p{
         font-size: 2.2vw;
     }
     #about{
-        height: 60vh;
+        height: 90vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -487,13 +515,13 @@ footer p{
         font-weight: 600;
     }
     #skills{
-        height: 30vh;
+        height: 40vh;
     }
     #skills h1{
         font-size: 3.8vw;
     }
     #projects{
-        height: 80vh;
+        height: 120vh;
         padding: 0 2vw;
         gap: 3vw;
     }
@@ -501,20 +529,19 @@ footer p{
         font-size: 4vw;
     }
     .project{
-        height: 60vh;
-        
+        height: 90vh;
     }
     .project> h3{
-        font-size: 3.2vw;
+        font-size: 3vw;
     }
     .project> p{
-        font-size: 2.4vw;
-    }
-    .project > .project_btn{
         font-size: 2.2vw;
     }
+    .project > .project_btn{
+        font-size: 2vw;
+    }
     #contact{
-        height: 80vh;
+        height: 120vh;
         padding: 0 2vw;
         gap: 3vw;
 
@@ -547,27 +574,41 @@ footer p{
     }
 }
 
-@media screen and (min-width: 500px) and (max-width: 767px){
+@media screen and (min-width: 501px) and (max-width: 767px){
     body{
         font-size: 14px;
-    }
-    nav ul a{
-        font-size: 2.4vw;
-        opacity: 0;
-    }
-    nav i{
-        font-size: 3vw;
-        opacity: 1;
-        color: #f0f2f5;
     }
     nav{
         height: 6vh;
     }
-        nav i{
-        font-size: 6vw;
-        opacity: 1;
-        color: #f0f2f5;
+    .checkbtn{
+        display: block;
     }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 50vh;
+        background: #607935;
+        top: 6vh;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        flex-direction: column;
+        justify-content: center;
+    }
+    nav ul li {
+        display: block;
+        padding: 1vw;
+        width: 50%;
+        border-bottom: 1px #f0f2f5 solid;
+      }
+    nav ul a{
+        font-size: 2.4vw;
+        /* opacity: 0; */
+    }
+    #check:checked~ul {
+        left: 0;
+      }
     #home-screen{
         height: 60vh;
         display: flex;
@@ -696,25 +737,38 @@ footer p{
     body{
         font-size: 14px;
     }
-    nav ul a{
-        font-size: 2.4vw;
-        opacity: 0;
-    }
-    nav i{
-        font-size: 3vw;
-        opacity: 1;
-        color: #f0f2f5;
-    }
     nav{
         height: 6vh;
     }
-        nav i{
-        font-size: 6vw;
-        opacity: 1;
-        color: #f0f2f5;
+    .checkbtn{
+        display: block;
     }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 50vh;
+        background: #607935;
+        top: 6vh;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        flex-direction: column;
+        justify-content: center;
+    }
+    nav ul li {
+        display: block;
+        padding: 1vw;
+        width: 50%;
+        border-bottom: 1px #f0f2f5 solid;
+      }
+    nav ul a{
+        font-size: 3vw;
+    }
+    #check:checked~ul {
+        left: 0;
+      }
     #home-screen{
-        height: 40vh;
+        height: 50vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -740,7 +794,7 @@ footer p{
         font-size: 3vw;
     }
     #about{
-        height: 60vh;
+        height: 70vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -761,7 +815,7 @@ footer p{
         font-weight: 600;
     }
     #skills{
-        height: 28vh;
+        height: 30vh;
     }
     #skills h1{
         font-size: 6vw;
@@ -774,7 +828,7 @@ footer p{
         width: 8vw;
     }
     #projects{
-        height: 120vh;
+        height: 140vh;
         padding: 0 2vw;
         gap: 3vw;
     }
@@ -784,10 +838,9 @@ footer p{
     .project-container{
         flex-direction: column;
         gap: 5vw;
-
     }
     .project{
-        height: 50vh;
+        height: 60vh;
         width: 80%;
     }
     .project> h3{
@@ -801,10 +854,9 @@ footer p{
         padding: 2vw 4vw;
     }
     #contact{
-        height: 80vh;
+        height: 100vh;
         padding: 0 2vw;
         gap: 3vw;
-
     }
     #contact h1{
         font-size: 6vw;
