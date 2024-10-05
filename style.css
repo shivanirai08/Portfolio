@@ -211,6 +211,7 @@ button a{
     overflow: hidden;
     position: relative;
     background-color: #f0f2f5;
+    padding: 1vw;
 }
 .project::before {
     content: '';
@@ -229,7 +230,7 @@ button a{
 .project:nth-child(1) > .img {
     width: calc(100% - 2vw);
     height: 40%;
-    margin: 1vw;
+    /* margin: 1vw; */
     border-radius: 10px;
     background: url(groceyish.png);
     background-size: cover;
@@ -239,7 +240,7 @@ button a{
 .project:nth-child(2) > .img {
     width: calc(100% - 2vw);
     height: 40%;
-    margin: 1vw;
+    /* margin: 1vw; */
     border-radius: 10px;
     background: url(netflixclone.png);
     background-size: cover;
@@ -353,7 +354,6 @@ form {
     width: 30vw;
     margin: 20px auto;
     padding: 2vw;
-    /* background-color: #333; */
     border:2px solid #556B2F;
     border-radius: 10px;
     box-shadow: 0 5px 9px rgba(0, 0, 0, 0.3);
@@ -368,7 +368,6 @@ form label{
 form input[type="text"],
 form input[type="email"],
 form textarea{
-    /* width: calc(100%); */
     width: 100%;
     padding: 10px;
     margin-bottom: 0px;
@@ -432,7 +431,7 @@ footer p{
 
 /* Media Queries */
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 992px) and (min-width: 768px){
     body{
         font-size: 14px;
     }
@@ -548,7 +547,164 @@ footer p{
     }
 }
 
-@media screen and (max-width: 768px){
+@media screen and (min-width: 500px) and (max-width: 767px){
+    body{
+        font-size: 14px;
+    }
+    nav ul a{
+        font-size: 2.4vw;
+        opacity: 0;
+    }
+    nav i{
+        font-size: 3vw;
+        opacity: 1;
+        color: #f0f2f5;
+    }
+    nav{
+        height: 6vh;
+    }
+        nav i{
+        font-size: 6vw;
+        opacity: 1;
+        color: #f0f2f5;
+    }
+    #home-screen{
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 3vw;
+        padding: 0 2vw;
+    }
+    #home-screen h1{
+        font-size: 6.4vw;
+        font-weight: 900;
+    }
+    #home-screen h2{
+        font-size: 3.6vw;
+        font-weight: 600;
+    }
+    .buttons{
+        gap: 3vw;
+    }
+    .buttons button{
+        padding: 2vw 4vw;
+    } 
+    .buttons button a{
+        font-size: 2.8vw;
+    }
+    #about{
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4vw;
+        padding: 0 2vw;
+    }
+    #photo{
+        height: 24vw;
+        width: 24vw;
+    }
+    #about-section h1{
+        font-size: 6vw;
+        text-align: center;
+    }
+    #about-section h3{
+        font-size: 3.6vw;
+        font-weight: 600;
+    }
+    #skills{
+        height: 30vh;
+        gap: 3vw;
+    }
+    #skills h1{
+        font-size: 5.8vw;
+    }
+    .icon{
+        gap: 6vw;
+    }
+    .data svg{
+        height: 8vw;
+        width: 8vw;
+    }
+    #projects{
+        height: 160vh;
+        padding: 0 2vw;
+        gap: 4vw;
+    }
+    #projects h1{
+        font-size: 6vw;
+    }
+    .project-container{
+        flex-direction: column;
+        gap: 5vw;
+
+    }
+    .project{
+        height: 70vh;
+        width: 80%;
+    }
+    .project> h3{
+        font-size: 5.4vw;
+    }
+    .project> p{
+        font-size: 3.8vw;
+    }
+    .project > .project_btn{
+        font-size: 3vw;
+        padding: 2vw 4vw;
+    }
+    #contact{
+        height: 90vh;
+        padding: 0 2vw;
+        gap: 3vw;
+
+    }
+    #contact h1{
+        font-size: 6vw;
+    }
+    #contact h2{
+        font-size: 4vw;
+    }
+    form{
+        width: 70vw;
+        margin: 0 auto;
+        padding: 2vw;
+    }
+    form label{
+        font-size: 4vw;
+    }
+    #social-media{
+        gap: 4vw;
+    }
+    #social-media i{
+        font-size: 5.8vw;
+    }
+    #contact h3{
+        font-size: 3.6vw;
+    }
+    footer{
+        height: 8vh;
+    }
+    footer p{
+        font-size: 3.6vw;
+    }
+}
+@media screen and (max-width: 500px){
+    body{
+        font-size: 14px;
+    }
+    nav ul a{
+        font-size: 2.4vw;
+        opacity: 0;
+    }
+    nav i{
+        font-size: 3vw;
+        opacity: 1;
+        color: #f0f2f5;
+    }
     nav{
         height: 6vh;
     }
@@ -680,4 +836,3 @@ footer p{
         font-size: 3.8vw;
     }
 }
-
