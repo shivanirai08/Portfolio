@@ -39,6 +39,7 @@ nav ul{
 }
 nav a{
     color: #F7F1E3;
+    font-size: 1.4vw;
     font-weight: 500;
     text-decoration: none;
     cursor: pointer;
@@ -74,12 +75,12 @@ nav a:hover{
 }
 .buttons{
     display: flex;
-    gap: 1vw;
+    gap: 2vw;
 }
 .buttons button{
     padding: 1vw 2vw;
     border-radius: 5px;
-    /* font-size: 2vw; */
+    font-size: 1.2vw;
     cursor: pointer;
     background-color: #607935;
     color: #f8f8f8;
@@ -144,41 +145,91 @@ button a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
-    gap: 2vw;
-    /* background-color: darkkhaki; */
+    gap: 1vw;
 }
 #about-section h1{
-    font-size: 3vw;
+    font-size: 3.2vw;
     line-height: 1.2;
     color: #556B2F;
     font-weight: 900;
 }
 #about-section h3{
-    text-align: justify;
+    font-size: 1.8vw;
     color: #607935;
+    font-weight: 500;
+    text-align: justify;
 }
 
 /* Project Section */
+#projects{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 0 4vw;
+    /* background-color: cornflowerblue; */
+}
+
+#projects h1{
+    font-size: 3.2vw;
+    line-height: 1.2;
+    color: #556B2F;
+    font-weight: 900;
+    text-align: center;
+}
 .project-container {
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    /* max-width: 1200px; */
 }
 .project {
-    height: 390px;
-    width: 235px;
+    height: 80vh;
+    width: 50vh;
     border: 2px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 9px 9px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
 }
 .project >img {
     width: 100%;
-    height: 200px;
+    height: 40%;
     object-fit: cover;
     border-radius: 8px 8px 0px 0px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    object-position: top;
+}
+
+.project > h3 {
+    font-size: 1.8vw;
+    color: #556B2F;
+    font-weight: 500;
+}
+
+.project > p{
+    padding: 1vw;
+    font-size: 1.4vw;
+    color: #607935;
+    font-weight: 400;
+    text-align: justify;
+}
+.project_btn {
+    padding: 1vw 2vw;
+    background-color: #607935;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 1.4vw;
+}
+.project_btn:hover{
+    background-color: #6b863c;
 }
