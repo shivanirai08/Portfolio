@@ -162,7 +162,7 @@ button a{
 #home-screen::after {
     content: "";
     position: absolute;
-    bottom: -50px;
+    bottom: 10px;
     left: -50px;
     width: 150px;
     height: 150px;
