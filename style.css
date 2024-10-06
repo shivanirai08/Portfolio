@@ -23,13 +23,31 @@ main{
     height: 8vh;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding: 0 4vw;
     box-shadow: 1px 1px 2px #a7a6a6;
     background-color: #556B2F;
     position: sticky;
     top: 0;
     z-index: 10;
+}
+#left{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+#right{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#left h1{
+    color: #F7F1E3;
+    font-size: 2.2vw;
+    font-weight: 700;
+}
+#name2{
+    display: none;
 }
 nav ul{
     display: flex;
@@ -224,6 +242,11 @@ button a{
     color: #607935;
     font-weight: 500;
     text-align: center;
+}
+.name{
+    font-size: 2vw;
+    font-weight: 700;
+    font-style: italic;
 }
 
 /* Project Section */
@@ -565,6 +588,9 @@ footer p{
     .checkbtn{
         display: block;
     }
+    #name1{
+        font-size: 2.8vw;
+    }
     nav ul{
         position: fixed;
         width: 100%;
@@ -587,8 +613,11 @@ footer p{
         /* line-height: ; */
       }
     nav ul a{
-        font-size: 2.4vw;
+        font-size: 2.2vw;
         /* opacity: 0; */
+    }
+    nav a:hover{
+        border-bottom: none;
     }
     #check:checked~ul {
         left: 0;
@@ -623,10 +652,6 @@ footer p{
         gap: 3vw;
         padding: 0 2vw;
     }
-    #photo{
-        height: 20vw;
-        width: 20vw;
-    }
     #about-section h1{
         font-size: 3.8vw;
         text-align: center;
@@ -634,6 +659,9 @@ footer p{
     #about-section h3{
         font-size: 2.4vw;
         font-weight: 600;
+    }
+    .name{
+        font-size: 2.6vw;
     }
     #skills{
         height: 40vh;
@@ -702,6 +730,13 @@ footer p{
     nav{
         height: 6vh;
     }
+    #name1{
+        display: none;
+    }
+    #name2{
+        display: block;
+        font-size: 3vw;
+    }
     .checkbtn{
         display: block;
     }
@@ -724,8 +759,10 @@ footer p{
         border-bottom: 1px #f0f2f5 solid;
       }
     nav ul a{
-        font-size: 2.4vw;
-        /* opacity: 0; */
+        font-size: 3.4vw;
+    }
+    nav a:hover{
+        border-bottom: none;
     }
     #check:checked~ul {
         left: 0;
@@ -765,10 +802,6 @@ footer p{
         gap: 4vw;
         padding: 0 2vw;
     }
-    #photo{
-        height: 24vw;
-        width: 24vw;
-    }
     #about-section h1{
         font-size: 6vw;
         text-align: center;
@@ -776,6 +809,9 @@ footer p{
     #about-section h3{
         font-size: 3.6vw;
         font-weight: 600;
+    }
+    .name{
+        font-size: 3.8vw;
     }
     #skills{
         height: 30vh;
@@ -861,6 +897,13 @@ footer p{
     nav{
         height: 6vh;
     }
+    #name1{
+        display: none;
+    }
+    #name2{
+        display: block;
+        font-size: 4vw;
+    }
     .checkbtn{
         display: block;
     }
@@ -877,13 +920,17 @@ footer p{
         justify-content: center;
     }
     nav ul li {
+        font-size: 3vw;
         display: block;
         padding: 1vw;
         width: 50%;
         border-bottom: 1px #f0f2f5 solid;
       }
     nav ul a{
-        font-size: 3vw;
+        font-size: 4vw;
+    }
+    nav a:hover{
+        border-bottom: none;
     }
     #check:checked~ul {
         left: 0;
@@ -923,10 +970,6 @@ footer p{
         gap: 3vw;
         padding: 0 2vw;
     }
-    #photo{
-        height: 24vw;
-        width: 24vw;
-    }
     #about-section h1{
         font-size: 6vw;
         text-align: center;
@@ -934,6 +977,9 @@ footer p{
     #about-section h3{
         font-size: 3.8vw;
         font-weight: 600;
+    }
+    .name{
+        font-size: 4vw;
     }
     #skills{
         height: 30vh;
